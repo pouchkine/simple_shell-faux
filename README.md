@@ -1,96 +1,50 @@
+# 0x16. C - Simple Shell
 
-![Holberton school logo](https://secure.meetupstatic.com/photos/event/b/c/5/6/highres_475548214.jpeg)
-# simple_shell project repository
+This project is an implementation of the shell created as the final project for the C code sprint at **ALX Africa**.
 
-This repository contains the files for Holberton's **simple_shell**. It can be compiled using GCC and will execute a simple shell that can be used for some basic tasks and programs most commonly found in the /bin/ folder.
+## Table of contents :clipboard:
 
-# Pre-requisites
+ - [Description]
+ - [Installation]
+ - [Usage]
+ - [Example]
+ - [Contributors]
+ - [Acknowledgements]
+## Description :e-mail:
+This is a shell written in [C](https://en.wikipedia.org/wiki/C_(programming_language)).
+It is based on [the Thompson Shell](https://en.wikipedia.org/wiki/Thompson_shell).
 
-### Authorized functions and macros:
-- access (man 2 access)
-- chdir (man 2 chdir)
-- close (man 2 close)
-- closedir (man 3 closedir)
-- execve (man 2 execve)
-- exit (man 3 exit)
-- _exit (man 2 _exit)
-- fflush (man 3 fflush)
-- fork (man 2 fork)
-- free (man 3 free)
-- getcwd (man 3 getcwd)
-- getline (man 3 getline)
-- isatty (man 3 isatty)
-- kill (man 2 kill)
-- malloc (man 3 malloc)
-- open (man 2 open)
-- opendir (man 3 opendir)
-- perror (man 3 perror)
-- read (man 2 read)
-- readdir (man 3 readdir)
-- signal (man 2 signal)
-- stat (__xstat) (man 2 stat)
-- lstat (__lxstat) (man 2 lstat)
-- fstat (__fxstat) (man 2 fstat)
-- strtok (man 3 strtok)
-- wait (man 2 wait)
-- waitpid (man 2 waitpid)
-- wait3 (man 2 wait3)
-- wait4 (man 2 wait4)
-- write (man 2 write)
-
-### GCC command to compile:
-`
-gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
-`
-
-This wil compile all the '.c' files and change the output's name to 'hsh'.
-
-### Template to test output:
-=============
-$ ./hsh
-
-($) 
-
-hsh main.c shell.c
-
-$ exit
-$
-
-
-After you clone this repository and compile the program with the command above, you will generate a file called **hsh** that can be executed by entering  ```./hsh``` in your shell.
-
-The output after the program is executed should look something like this:
+## Installation :wrench:
+Clone the below repository and compile the files into an executable using the GCC compiler.
 ```
-$|
+https://github.com/Fraol123/simple_shell.git.
 ```
-Where you will get a prompt in the shape of a dollar sign so you can start typing commands into your shell.  Agood example of how it should execute is the command shown above were the user enters 'ls' and then gets a list of the directory contents.
-## Function Prototypes:
+##Environment :evergreen_tree::evergreen_tree:
 
-Brief description of functions contained in project:
+Our shell was built and tested on  Ubuntu 14.04 LTS.
 
-**_strcmpdir** :  compares strings to find dir.
-**find_command** :  finds command to execute in path routes.
-**charput** :  writes the character like putchar.
-**place** :  similar to puts in C.
-**_strlen** :  string length.
-**str_concat** :  concatenate strings.
-**lookforslash** :  identify if first char is a '/'.
-**compareExit** :  checks if user typed exit.
-**compareEnv** :  checks if user typed env.
-**execute_proc** :  receives command and args from getline to be executed.
-**identify_string** :  returns pointer with folder address.
-**prompt** :  infinite loop with fork to keep prompt going.
-**controlC**: avoid program closing when pressing ctrl + c.
-**main**: initialize program.
+### Basic usage :bulb:
+- First, [fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+- Then [clone it to your local machine](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+- Create an executable by running the following command:
+- `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
+- From there, type in the following command and press your enter button.
+- `./hsh`
+- Final step: ENJOY!
 
-README.md: this.
+## Example :computer:
+```
+ls -la
+```
+![screenshot of shell](https://user-images.githubusercontent.com/30075600/114757753-e50c2180-9d64-11eb-95ea-fb9bba776c8c.png)
 
-## General Flow Chart:
+## Contributors :sunglasses::muscle:
+* [**Fraol Tolera**](https://github.com/Fraol123)
+* [**Andrew Mukare**](https://github.com/JudgeFudge19)
+* [**Ermias Teshome**](https://github.com/ermiast)
 
-<a href="https://ibb.co/1MMmc0J"><img src="https://i.ibb.co/5kkRZ1x/Untitled-Diagram.png" alt="Untitled-Diagram" border="0"></a>
-
-### Contact Info:
-
-Git: [Camilo Baquero](https://github.com/camilooob), [Sergio Pietri](https://github.com/Virteip)
-
-Twitter: [@camilooob](https://twitter.com/camilooob),  [@sergiopietri](https://twitter.com/sergiopietri)
+## Acknowledgments :pray:
+- Our fellow cohort members.
+- The creators of the C language.
+- Our software engineer-in-residence.
+- Betty Holberton.
